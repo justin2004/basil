@@ -149,7 +149,7 @@ public class CredentialsResource extends AbstractResource {
 //			if (!getApiManager().existsSpec(id)) {
 //				return Response.status(409).entity("API does not exists (create the API first).").build();
 //			}
-			String[] credentials = StringUtils.split(body.trim(), "\n");
+			String[] credentials = StringUtils.split(body.trim(), " ");
 
 			try {
 				// We allow for an empty password.
